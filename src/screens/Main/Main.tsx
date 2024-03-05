@@ -1,8 +1,19 @@
 import React, { FunctionComponent } from "react";
-import { useAppSelector } from "../../redux/reducers.hooks";
 
-export const Main: FunctionComponent = () => {
-  const tasks = useAppSelector((state) => state.tasks);
-  console.log("tasks", tasks);
-  return <div>Main</div>;
-};
+// components
+import { Header } from "../../components/Header/Header";
+import { InfoLine } from "../../components/InfoLine/InfoLine";
+import { List } from "../../components/List/List";
+
+// styles
+import styles from "./Main.module.css";
+
+export const Main: FunctionComponent = () => (
+  <div className={styles.container}>
+    <div className={styles.body}>
+      <Header />
+      <InfoLine />
+      <List />
+    </div>
+  </div>
+);

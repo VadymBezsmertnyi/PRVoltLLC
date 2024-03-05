@@ -15,11 +15,15 @@ module.exports = {
   plugins: ["@typescript-eslint", "react"],
   ignorePatterns: ["src/index.tsx", "src/reportWebVitals.ts"],
   rules: {
-    "unicorn/filename-case": "off",
     quotes: "off",
-    "@typescript-eslint/semi": "off",
     "quote-props": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
+    "comma-dangle": "off",
     "no-empty-pattern": "off",
+    "unicorn/filename-case": "off",
+    "@typescript-eslint/semi": "off",
+    "@typescript-eslint/no-extra-parens": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-empty-function": "warn",
   },
 };

@@ -1,0 +1,10 @@
+.container {
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+  overflow-y: auto;
+  gap: 5px;
+  padding: 20px 0px 0px;
+}
