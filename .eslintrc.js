@@ -6,13 +6,20 @@ module.exports = {
   extends: [
     "@wemake-services/javascript",
     "@wemake-services/typescript/recommended",
-    "@wemake-services/stylelint-config-scss",
   ],
-  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
+    project: "./tsconfig.json",
   },
   plugins: ["@typescript-eslint", "react"],
-  rules: {},
+  ignorePatterns: ["src/index.tsx", "src/reportWebVitals.ts"],
+  rules: {
+    "unicorn/filename-case": "off",
+    quotes: "off",
+    "@typescript-eslint/semi": "off",
+    "quote-props": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "no-empty-pattern": "off",
+  },
 };
